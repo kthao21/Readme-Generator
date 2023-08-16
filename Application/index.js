@@ -14,11 +14,6 @@ inquirer.prompt ([
     },
     {
         type: 'input',
-        message: 'Add a Table of Contents if your README is long',
-        name: 'contents'
-    },
-    {
-        type: 'input',
         message: 'What are the steps required to install your project?',
         name: 'installation'
     },
@@ -53,7 +48,7 @@ inquirer.prompt ([
     },
     {
         type: 'input',
-        message: 'Insert badges here.',
+        message: 'Paste your badges here.',
         name: 'badges'
     },
     {
@@ -63,14 +58,25 @@ inquirer.prompt ([
     },
     {
         type: 'input',
-        message: 'Include guidelines for how ',
+        message: 'Include guidelines for how to contribute.',
         name: 'contribute'
     },
     {
         type: 'input',
-        message: '',
-        name: 'tests'
+        message: 'Include instructions on how to run a test.',
+        name: 'test'
+
     },
+    {
+        type: 'input',
+        message: 'What is your GitHub profile?',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email'
+    }
 
 ])
 .then ((response) => {
@@ -81,45 +87,59 @@ inquirer.prompt ([
     
     `# ${response.title}
 
-    ## Description
+## Description <a name="description"></a>
 
-    ${response.description}
+${response.description}
     
-    ## Table of Contents
+## Table of Contents <a name="contents"></a>
 
-    ${response.contents}
+[description](#description)
+[contents](#contents)
+[installation](#installation)
+[usage](#usage)
+[credits](#credits)
+[license](#license)
+[badges](#badges)
+[features](#features)
+[contribute](#contribute)
+[test](#test)
+[question](#question)
     
-    ## Installation
+## Installation <a name="installation"></a>
 
-    ${response.installation}
+${response.installation}
     
-    ## Usage
+## Usage <a name="usage"></a>
 
-    ${response.usage}
+${response.usage}
     
-    ## Credits
+## Credits <a name="credits"></a>
 
-    ${response.credits}
+${response.credits}
     
-    ## License
+## License <a name="license"></a>
 
-    ${response.license}
+${response.license}
     
-    ## Badges
+## Badges (<a name="badges"></a>)
     
-    ${response.badges}
+${response.badges}
 
-    ## Features
+## Features <a name="features"></a>
 
-    ${response.features}
+${response.features}
     
-    ## How to Contribute
+## How to Contribute <a name="contribute"></a>
     
-    ${response.contribute}
+${response.contribute}
 
-    ## Tests
+## Tests <a name="test"></a>
 
-    ${response.test}`
+${response.test}
+    
+##Questions
+
+If you have any additional questions, you can contact me directly at ${response.email} or ${response.github}.`
 
 
 fs.writeFile("README.md", readmeGenerator,
