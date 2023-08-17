@@ -1,4 +1,4 @@
-# README Genderator
+# README Generator
 
 ## Description <a name="description"></a>
 
@@ -20,22 +20,22 @@ My goal for this project is to create a README generator that helps me to effici
     
 ## Installation <a name="installation"></a>
 
-On Github.com, navigate to the main page of the repository- kthao21.github.io/Readme-Generator/
-Above the list of files, click < > code.
-Clone the repository.
-Open the terminal/command line.
-Change the current working directory to the location where you want the cloned directory.
-Type “git clone”, and then paste the URL that was copied in step 3.
-Press the “Enter” key to create your local clone.
+1. On Github.com, navigate to the main page of the repository- kthao21.github.io/Readme-Generator/
+2. Above the list of files, click < > code.
+3. Clone the repository.
+4. Open the terminal/command line.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type “git clone”, and then paste the URL that was copied in step 3.
+7. Press the “Enter” key to create your local clone.
 
 
     
 ## Usage <a name="usage"></a>
 
-Open the cloned repo in your code editor.
-Using your command line, cd into the “index.js” file.
-Using your command line, type “node index.js”.
-Answer the questions that are prompted in the command line to create your professional README.md.
+1. Open the cloned repo in your code editor.
+2. Using your command line, cd into the “index.js” file.
+3. Using your command line, type “node index.js”.
+4. Answer the questions that are prompted in the command line to create your professional README.md.
 
 
     
