@@ -13,12 +13,12 @@ inquirer.prompt ([
         name: 'description'
     },
     {
-        type: 'input',
+        type: 'editor',
         message: 'What are the steps required to install your project?',
         name: 'installation'
     },
     {
-        type: 'input',
+        type: 'editor',
         message: 'Provide instructions and examples for use.',
         name: 'usage'
     },
@@ -57,7 +57,7 @@ inquirer.prompt ([
         name: 'features'
     },
     {
-        type: 'input',
+        type: 'editor',
         message: 'Include guidelines for how to contribute.',
         name: 'contribute'
     },
