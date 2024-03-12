@@ -1,4 +1,4 @@
-# README Genderator
+# README Generator
 
 ## Description <a name="description"></a>
 
